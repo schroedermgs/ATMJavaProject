@@ -1,0 +1,42 @@
+class LoginController extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = new LoginModel("");
+		this.onChange = this.onChange.bind(this);
+		this.getUser = this.getUser.bind(this);
+	}
+	onChange(event){
+		this.setState(new LoginModel(event.target.value));
+	}
+	getUser(){
+		const userId = this.state.username;
+        let handleResponse = (status, accounts) => this.setState({responseStatus: status, accounts: accounts});
+        handleResponse = handleResponse.bind(this);
+        $.ajax({
+            url: "/atm-api/users/" + userId.replace(" ",""),
+            type: "GET",
+            success: function(response) {
+                handleResponse(200, response.accounts);
+				$("header h3").show();
+				document.getElementById("logged-user").innerHTML = userId;
+				document.getElementById("account-numbers").innerHTML = "";
+				response.accounts.forEach(function(acct){
+					document.getElementById("account-numbers").innerHTML += acct+" ";
+				});
+				ReactDOM.render(<CheckBalanceController />, document.getElementById("banking-area"));
+            },
+            error: function(xhr, status, error) {
+                handleResponse(xhr.status);
+				$("header h3").hide();
+				document.getElementById("logged-user").innerHTML = "";
+				document.getElementById("account-numbers").innerHTML = "";
+            }
+        });
+	}
+	render(){
+		return(
+			<LoginForm onChange={this.onChange} username={this.state.username} password={this.state.password} onClick={this.getUser} statusCode={this.state.responseStatus} />
+		);
+	}
+}
+ReactDOM.render(<LoginController />, document.getElementById("login-area"));

@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Sun Nov 28 16:05:26 EST 2021
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\cicad\\.m2\\repository\\org\\springframework\\spring-web\\4.3.1.RELEASE\\spring-web-4.3.1.RELEASE.jar=WEB-INF/lib/spring-web-4.3.1.RELEASE.jar
+org.eclipse.jst.j2ee.server\:atm-core=WEB-INF/lib/atm-core-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:atm-dao-jpa-impl=WEB-INF/lib/atm-dao-jpa-impl-0.0.1-SNAPSHOT.jar

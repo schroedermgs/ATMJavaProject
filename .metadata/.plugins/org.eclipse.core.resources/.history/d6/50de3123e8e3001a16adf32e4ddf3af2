@@ -1,0 +1,31 @@
+class BankingAreaController extends React.Component {
+	constructor(props) {
+        super(props);
+        this.initializeTransfer = this.initializeTransfer.bind(this);
+		this.accountNumbers = props.accountNumbers;
+		this.allAccountControllers = this.accountNumbers.map((acct)=><AccountInfoBoxController accountNumber={acct} key={acct} />);
+    }
+    initializeTransfer() {
+		ReactDOM.render( <div></div>, document.getElementById("transaction-window"))
+		ReactDOM.render( <TransferController /> ,document.getElementById("transaction-window"));
+		$("#transfer-component").slideDown(600);
+    }
+    render(){
+		
+		return (
+			<section id="banking-area">
+		        <div id="accounts-area">
+					<div id="accounts-top">
+						<h2>Your Accounts</h2>
+						<abbr title="Transfer"><img id="initialize-transfer-button" onClick={this.initializeTransfer} src="resources/images/transfer-arrows.png"></img></abbr>
+					</div>
+					<div id="accounts-window">{this.allAccountControllers}</div>
+				</div>
+				<TransactionWindowArea />
+				<MiddleArea />
+			</section>
+	    );
+	}
+}
+
+

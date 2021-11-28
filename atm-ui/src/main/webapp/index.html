@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>My Penguin Plan</title>
+	<link rel="stylesheet" href="resources/css/antarctica.css">
+	<link rel="shortcut icon" href="resources/images/antarctica-symbol.png">
+	<!--  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+	<script type="text/javascript" src="resources/js-jsx/lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="resources/js-jsx/lib/babel.min.js"></script>
+    <script type="text/javascript" src="resources/js-jsx/lib/react.min.js"></script>
+    <script type="text/javascript" src="resources/js-jsx/lib/react-dom.min.js"></script>
+    
+    <script type="text/javascript" src="resources/js-jsx/Banner.js"></script>
+    
+	<script type="text/javascript" src="resources/js-jsx/model/AccountInfoBoxModel.js"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/AccountInfoBox.jsx"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/MiddleArea.jsx"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/TransactionWindowArea.jsx"></script>
+    
+    <script type="text/javascript" src="resources/js-jsx/model/TransferModel.js"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/TransferForm.jsx"></script>
+    
+    <script type="text/javascript" src="resources/js-jsx/model/LoginModel.js"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/LoginForm.jsx"></script>
+    
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/HistoryForm.jsx"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/HistoryTable.jsx"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/HistoryRow.jsx"></script>
+    
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/DepositForm.jsx"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/FakeCheck.jsx"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/BillForm.jsx"></script>
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/view/NewAccountForm.jsx"></script>
+    
+    <script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/model/BankingModel.jsx"></script>
+</head>
+
+<body>
+	<nav id="nav-bar">
+		<div class="nav-container">
+			<a href="#">Home</a>
+			<a >About Us</a>
+			<a id="new-link">New Account</a>
+			<a id="deposit-link">Deposit</a>
+			<a id="withdraw-link">Pay Bills</a>
+		</div>
+	</nav>
+	<header id="header">
+		<h1>Bank of Antarctica</h1>
+		<h3>Welcome: <span id="logged-user"> </span></h3>
+	</header>
+	<br>
+	
+	<div id="app"></div>
+	
+	<footer id="page-bottom">
+		<div id="logout" hidden>LOG OUT</div>
+		<div>© 2020 Antarctica Penguin Group. All rights reserved.</div>
+	</footer>
+
+	<script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/controller/LoginController.jsx"></script>
+	<script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/controller/AccountInfoBoxController.jsx"></script>
+	<script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/controller/TransferController.jsx"></script>
+	<script type="text/babel" data-presets="es2015,react" src="resources/js-jsx/controller/BankingAreaController.jsx"></script>
+	<audio id="penguin-sound" src="resources/sound/Penguins.m4a"></audio>
+</body>
+
+</html>

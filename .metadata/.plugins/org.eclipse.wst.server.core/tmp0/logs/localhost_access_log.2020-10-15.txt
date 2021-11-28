@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:29 -0400] "GET /atm-api/users/bigguy HTTP/1.1" 200 88
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:30 -0400] "GET /atm-ui/resources/images/transfer-arrows.png HTTP/1.1" 200 597
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:30 -0400] "GET /atm-ui/resources/images/penguin-white.png HTTP/1.1" 200 1575
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:30 -0400] "GET /atm-api/accounts/436421 HTTP/1.1" 200 124
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:30 -0400] "GET /atm-api/accounts/444555 HTTP/1.1" 200 645
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:30 -0400] "GET /atm-api/accounts/832685 HTTP/1.1" 200 123
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:30 -0400] "GET /atm-api/accounts/321321 HTTP/1.1" 200 411
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:30 -0400] "GET /atm-api/accounts/010101 HTTP/1.1" 200 255
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:40 -0400] "GET /atm-ui/resources/images/penguin-family2.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:51 -0400] "GET /atm-ui/resources/images/cute-seals.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:56 -0400] "GET /atm-api/321321/history?start=0&end=0 HTTP/1.1" 200 1564
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:38:56 -0400] "GET /atm-ui/resources/images/back-arrow.png HTTP/1.1" 200 426
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:39:24 -0400] "GET /atm-api/321321/history?start=0&end=0 HTTP/1.1" 200 1564
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:39:38 -0400] "GET /atm-ui/resources/images/camera-button.png HTTP/1.1" 200 683
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:39:40 -0400] "GET /atm-ui/resources/images/amundsen-signature.png HTTP/1.1" 200 3165
+0:0:0:0:0:0:0:1 - - [15/Oct/2020:13:41:02 -0400] "GET /atm-ui/resources/images/penguin-blue.png HTTP/1.1" 304 -

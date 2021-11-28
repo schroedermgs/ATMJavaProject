@@ -1,0 +1,14 @@
+import java.util.Date;
+
+public class MainRun {
+	
+	public static void main(String[] args) {
+		SingleNumberFinder finder = new SingleNumberFinder();
+		int[] array = {1,2,2};
+		System.out.println(finder.singleNumber(array));
+		Date date1 = new Date("2020-08-23");
+		System.out.println("2020-08-23".compareTo("2020-07-24"));
+
+	}
+
+}

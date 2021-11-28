@@ -1,0 +1,23 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class MainRun {
+	
+	public static void main(String[] args) {
+		SingleNumberFinder finder = new SingleNumberFinder();
+		int[] array = {1,2,2};
+		
+		DateFormat detailedDateFormat = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss:SSS");
+		try {
+			detailedDateFormat.parse("2020/08/23".replace("/", "-"));
+		} catch (ParseException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		
+
+	}
+
+}

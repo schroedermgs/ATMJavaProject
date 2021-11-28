@@ -1,0 +1,54 @@
+const imageSources = ["resources/images/ice-sunset.png",
+"resources/images/penguin-family2.png",
+"resources/images/cute-seals.png",
+"resources/images/iceberg.png"];
+var imageIndex = 0;
+
+function displayBannerImage(){
+	imageIndex = (imageIndex===imageSources.length-1) ? 0 : imageIndex+1;
+	document.getElementById("header").style.backgroundImage = `url('${imageSources[imageIndex]}')`
+}
+
+setInterval(displayBannerImage,11000);
+
+var loggedTime = 45;
+var counting = false;
+
+function countdownTimeout(){
+	if(counting){
+		loggedTime -= 1;
+		if(loggedTime<=0){
+			counting = false;
+			logout();
+			resetTimer();
+			setTimeout(()=>alert("You have been logged out due to inactivity."),1200)
+		}
+	}
+}
+
+var timerTick = setInterval(countdownTimeout,1000);
+clearInterval(timerTick);
+
+function resetTimer(){
+	loggedTime = 45;
+}
+window.addEventListener("mousemove",resetTimer);
+
+
+function fixTwoDecimals(num){
+	if(num){
+		var oldNum = String(num);
+		var newNum = String(num);
+		try{
+			splitNum = oldNum.split(".");
+			if(splitNum.length>2){
+				newNum = oldNum.split(".")[0] + "." + oldNum.split(".")[1]
+			}
+			if(oldNum.split(".")[1].length>2){
+				newNum = oldNum.split(".")[0] + "." + oldNum.split(".")[1].substring(0,2);
+			}
+		}catch(e){}
+		return newNum;
+		console.log(String(null))
+	}
+}

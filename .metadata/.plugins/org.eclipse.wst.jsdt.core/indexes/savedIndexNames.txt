@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\Users\cicad\Workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3948051768.index
+2628237133.index
+3277609097.index
+689727599.index
+810835052.index
+1277305777.index
+3230319315.index
+3144152164.index

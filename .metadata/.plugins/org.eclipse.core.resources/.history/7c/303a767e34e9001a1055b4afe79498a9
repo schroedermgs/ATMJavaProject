@@ -1,0 +1,33 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class MainRun {
+	
+	public String[] sortDates(String[] dateArray) {
+		dateArray.
+	}
+	
+	public static void main(String[] args) {
+		SingleNumberFinder finder = new SingleNumberFinder();
+		int[] array = {1,2,2};
+		
+		DateFormat detailedDateFormat = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss:SSS");
+		try {
+			detailedDateFormat.parse("2020/08/23");
+		} catch (ParseException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		String date1 = "2020-08-23 12:12:43:555";
+		String date2 = "2020-08-25 16:40:07:888";
+		String date3 = "2020-08-28 09:21:30:333";
+		String date4 = "2020-08-28 09:22:49:999";
+		
+		String[] dateArray = {date1,date4,date2,date3};
+		
+
+	}
+
+}

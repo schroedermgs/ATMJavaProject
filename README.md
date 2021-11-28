@@ -1,6 +1,7 @@
 **** ATM JAVA PROJECT README **** 
 
 This was a full-stack training project utilizing Java, React/JS, CSS, and Derby database/JDBC. 
+It started off as a simple text-based console app, then evolved into a full API/UI. 
 
 
 TASK:  To learn the above through the creation of an "ATM machine" with full withdraw, deposit, 

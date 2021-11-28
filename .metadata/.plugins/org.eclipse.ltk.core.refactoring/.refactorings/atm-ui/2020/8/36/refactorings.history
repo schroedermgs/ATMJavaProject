@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;atm-ui/src/main/webapp/resources/js-jsx/view/ActionForm.jsx&apos; to &apos;HistoryForm.jsx&apos;" description="Rename resource &apos;ActionForm.jsx&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/resources/js-jsx/view/ActionForm.jsx" name="HistoryForm.jsx" stamp="1598795866720" updateReferences="true"/>
+</session>

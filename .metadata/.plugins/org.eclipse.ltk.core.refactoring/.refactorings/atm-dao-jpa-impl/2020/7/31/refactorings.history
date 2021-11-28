@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;account&apos; in &apos;com.smbcgroup.training.atm.dao.jpa.AccountJPAImplTest.testUpdateAccount_NewAccount()&apos; to &apos;newAccount&apos;&#x0D;&#x0A;- Original project: &apos;atm-dao-jpa-impl&apos;&#x0D;&#x0A;- Original element: &apos;com.smbcgroup.training.atm.dao.jpa.AccountJPAImplTest.testUpdateAccount_NewAccount().account&apos;&#x0D;&#x0A;- Renamed element: &apos;account&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;account&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.smbcgroup.training.atm.dao.jpa{AccountJPAImplTest.java[AccountJPAImplTest~testUpdateAccount_NewAccount@account!1936!1967!1944!1950!QAccount;!0!false" name="newAccount" references="true" stamp="1595862078454" version="1.0"/>
+</session>

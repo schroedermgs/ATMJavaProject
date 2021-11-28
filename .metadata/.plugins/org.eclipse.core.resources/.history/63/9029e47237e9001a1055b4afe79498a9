@@ -1,0 +1,35 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class MainRun {
+	
+	public Date createStartDate(String start) {
+		DateFormat detailedDateFormat = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss:SSS");
+		try {
+			String startString = start.replace("/", "-")+" 00:00:00:000";
+			Date startDate = detailedDateFormat.parse(startString);
+			return startDate;
+		} catch (ParseException e) {
+			return null;
+		}
+	}
+	
+	public static void main(String[] args) {
+		SingleNumberFinder finder = new SingleNumberFinder();
+		int[] array = {1,2,2};
+		
+		DateFormat detailedDateFormat = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss:SSS");
+		try {
+			Date newDate = detailedDateFormat.parse("08/28/2020".replace("/", "-") + " 23:59:59:999");
+			System.out.println(newDate);
+		} catch (ParseException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		
+
+	}
+
+}

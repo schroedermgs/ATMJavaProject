@@ -1,0 +1,18 @@
+import java.util.Date;
+
+public class MainRun {
+	
+	public static void main(String[] args) {
+		SingleNumberFinder finder = new SingleNumberFinder();
+		int[] array = {1,2,2};
+		
+		String date1 = "2020-08-23 12:12:43:555";
+		String date2 = "2020-08-25 16:40:07:888";
+		String date3 = "2020-08-28 09:21:30:333";
+		String date4 = "2020-08-28 09:22:49:999";
+		
+		System.out.println("2020".compareTo("2022"));
+
+	}
+
+}

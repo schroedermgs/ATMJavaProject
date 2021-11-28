@@ -1,0 +1,11 @@
+
+public class MainRun {
+	
+	public static void main(String[] args) {
+		SingleNumberFinder finder = new SingleNumberFinder();
+		int[] array = {1,2,2};
+		System.out.println(finder.singleNumber(array));
+
+	}
+
+}

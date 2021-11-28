@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [13/Aug/2020:16:46:33 -0400] "GET /atm-api/swagger/swagger-resources HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [13/Aug/2020:16:46:33 -0400] "GET /atm-api/swagger-resources HTTP/1.1" 200 80
+0:0:0:0:0:0:0:1 - - [13/Aug/2020:16:46:33 -0400] "GET /atm-api/swagger/v2/api-docs HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [13/Aug/2020:16:46:34 -0400] "GET /atm-api/v2/api-docs HTTP/1.1" 200 3537
+0:0:0:0:0:0:0:1 - - [13/Aug/2020:16:46:34 -0400] "GET /atm-api/swagger/swagger-resources/configuration/security HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [13/Aug/2020:16:46:34 -0400] "GET /atm-api/swagger-resources/configuration/security HTTP/1.1" 200 81

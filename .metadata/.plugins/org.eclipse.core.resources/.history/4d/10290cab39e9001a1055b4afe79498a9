@@ -1,0 +1,29 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class MainRun {
+	
+	public static Date createStartDate(String start) {
+		DateFormat detailedDateFormat = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss:SSS");
+		try {
+			String startString = start.replace("/", "-")+" 00:00:00:000";
+			Date startDate = detailedDateFormat.parse(startString);
+			return startDate;
+		} catch (ParseException e) {
+			return null;
+		}
+	}
+	
+	public static void main(String[] args) {
+		SingleNumberFinder finder = new SingleNumberFinder();
+		int[] array = {1,2,2};
+		
+		System.out.println(createStartDate("09/21/2017").after(createStartDate("08/21/2019")));
+		
+		
+
+	}
+
+}

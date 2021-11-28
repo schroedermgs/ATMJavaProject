@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.smbcgroup.training.atm.Transaction.java&apos; to &apos;BankTransaction.java&apos;&#x0D;&#x0A;- Original project: &apos;atm-core&apos;&#x0D;&#x0A;- Original element: &apos;com.smbcgroup.training.atm.Transaction.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.smbcgroup.training.atm.BankTransaction.java&apos;" description="Rename compilation unit &apos;Transaction.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.smbcgroup.training.atm{Transaction.java" name="BankTransaction.java" references="false" stamp="1596659586369" version="1.0"/>
+</session>
